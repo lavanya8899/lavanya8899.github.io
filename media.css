@@ -1,0 +1,94 @@
+/* Media queries allow you to apply CSS styles depending on a device's general type . */
+/* These are all the media queries for index.html page with the desktop first approach*/
+@media only screen and (min-width: 550px)
+{
+    /* timer (00:00:00:00) size will be reduced by using this font-size */
+    .time
+    {
+        font-size: 2.5vw;
+    }
+    /* reduced the size of text in start,stop,reset buttons */
+    button{
+        font-size: 1.9vw;
+        
+    }
+    /* re-adjusted the buttons viwport */
+    #button-frame button{
+        width: 6.5vw;
+        height: 3vh;
+    }
+}
+
+@media only screen and (max-width: 550px)
+{
+    /* decreased timer fontsize */
+    .time
+    {
+        font-size: 4.5vw; 
+    }
+    /* reduced the size of text in start,stop,reset buttons */
+    button
+    {
+        font-size: 2.3vw;
+    }
+    /* re-adjusted the buttons viwport */
+    #button-frame button
+    {
+        height: 3vh;
+        width: 7.3vw;
+    } 
+    /* The dimensions of the timer border will be incresed,the top dimension should also be decreased */
+   .timer_border
+   {
+    height:28vw;
+    width: 31vw;
+    top: 18vh;
+   }    
+}
+
+@media only screen and (max-widht: 600px)
+{
+    /* timer (00:00:00:00) size will be reduced by using this font-size */
+    .time
+    {
+        font-size: 8rem;
+    }
+}
+
+@media only screen and (min-width: 728px)
+{
+    /* the timer border top dimension should be incresed */
+    .timer_border
+    {
+        top: 23vh;
+    }
+    
+}
+
+@media only screen and (max-width: 992px)
+{
+    /* re-adjusted the stop watch headding viwport */
+    h2
+    {
+        padding-top: 6%;
+        font-size: 2rem;
+    }
+    /* timer (00:00:00:00) left space will be reduced by using this margin left */
+    .time
+    {
+        margin-left: -12px;
+        
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    /* re-adjusted the buttons viwport */
+    #button-frame button
+    {
+        height: 7vh;
+    }
+   
+}
+
+

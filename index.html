@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <!-- it is connected to two stylesheets -->
+
+    <!-- this is the main stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- this is the style sheet with all the media queries -->
+    <link rel="stylesheet" type="text/css" href="media.css">
+</head>
+<body>
+      <!-- top navigation bar -->
+    <nav class="nav-bar">
+     <!-- website headding -->
+    <h2>~Stop Watch~</h2>
+    </nav>
+
+    <main>
+     <!--This div contains the stopwatch,time and buttons of the page-->
+     <div class="first-line" >
+     <!--This div contains stopwatch circle and timer of the page-->
+     <div id="circle">   
+         
+    <div class="timer_border">
+        <section class="box1">
+            <!-- This section contains the hours,minutes,seconds and count of the stop watch -->
+            <section class="time">
+                <sapn id="hr">   00</sapn>:
+                <span id="min">  00</span>:
+                <span id="sec">  00</span>:
+                <span id="count">00</span>
+            </section>
+        </section>
+    </div>
+    </div>
+    
+    <!-- button-frame -->
+    
+    <div class="adjust-line">
+    <!-- This div contains the three buttons and when user click on the button the colour is changed -->
+    <div id="button-frame">
+         <button type="button" id="start" onclick="change()"> Start </button>
+         <button type="button" id="stop" class="stop" onclick="change1()">Stop</button>
+         <button type="button" id="reset" class="reset" onclick="change2()">Reset</button>
+    </div>
+    </div>
+    </div>
+    <!--This is the script tag to add Javascript code -->
+    <script type="text/Javascript" src="script.js"></script>
+    
+    </main>
+    </body>
+</html>
